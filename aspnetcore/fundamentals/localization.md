@@ -48,7 +48,7 @@ At the lowest level, you can get `IStringLocalizerFactory` out of [Dependency In
 
 The code above demonstrates each of the two factory create methods.
 
-You can partition your localized strings by controller, area, or have just one container. In the sample app, a dummy class named `SharedResource` is used for shared resources.
+You can partition your localized strings by controller, area, or have just one container. In the sample app, a dummy class named `SharedResource` is used for shared resources. Note that namespace of `SharedResource` should be `Localization` even if file is placed in Resources folder. Resx files related to `SharedResource` should reside in the same folder as class, for example `SharedResources.fr.resx`
 
 [!code-csharp[](localization/sample/3.x/Localization/Resources/SharedResource.cs)]
 
